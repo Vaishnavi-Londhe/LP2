@@ -1,0 +1,25 @@
+public class Calculator {
+    public Integer firstNumber { get; set; }
+    public Integer secondNumber { get; set; }
+    public Integer result { get; set; }
+
+    public void Addition() {
+        result = firstNumber + secondNumber;
+    }
+    
+    public void Subtraction() {
+        result = firstNumber - secondNumber;
+    }
+    
+    public void Multiplication() {
+        result = firstNumber * secondNumber;
+    }
+    
+    public void Division() {
+        if (secondNumber != 0) {
+            result = firstNumber / secondNumber;
+        } else {
+            result = null; // Or add a custom error message if needed.
+        }
+    }
+}
